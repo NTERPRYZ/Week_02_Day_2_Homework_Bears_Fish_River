@@ -12,12 +12,11 @@ class TestBears < MiniTest::Test
     @fish1 = Fish.new("Harry")
     @fish2 = Fish.new("Ron")
     @fish3 = Fish.new("Hermoine")
-
   end
-
 
   def test_bear_name
       assert_equal("Yogi", @bear.bear_name())
   end
+
 
 end

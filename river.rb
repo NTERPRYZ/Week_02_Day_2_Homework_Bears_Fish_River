@@ -4,11 +4,19 @@ class River
 
   def initialize(river_name)
     @river_name = river_name
-    @fish = []
+    @fish_in_river = []
   end
 
-  # def river_name()
-  #     return @river_name(river_name)
-  #   end
+  def how_many_fish_in_river()
+    return @fish_in_river.length
+  end
+
+  def empty_river()
+    @fish_in_river = []
+  end
+
+  def bear_arrives_and_eats_fish(fish_name)
+    @bear_stomach.push(fish_name)
+  end
 
 end
